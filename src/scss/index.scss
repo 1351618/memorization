@@ -32,3 +32,13 @@ input {
 body {
   background-color: #dfdfdf;
 }
+
+.words {
+  margin: 20px;
+}
+.word-list {
+  li {
+    display: flex;
+    gap: 8px;
+  }
+}
