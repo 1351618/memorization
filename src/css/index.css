@@ -42,9 +42,21 @@ body {
 
 .words {
   margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  .words {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.word-list li {
+.words ul {
+  padding: 20px;
+  border-radius: 10px;
+}
+.words ul li {
   display: flex;
   gap: 8px;
 }/*# sourceMappingURL=index.css.map */

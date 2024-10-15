@@ -35,8 +35,17 @@ body {
 
 .words {
   margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-.word-list {
+.words ul {
+  padding: 20px;
+  border-radius: 10px;
   li {
     display: flex;
     gap: 8px;
