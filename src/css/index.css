@@ -40,23 +40,23 @@ body {
   background-color: #dfdfdf;
 }
 
-.words {
+.words__cont {
   margin: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 @media (max-width: 700px) {
-  .words {
+  .words__cont {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.words ul {
+.words__cont ul {
   padding: 20px;
   border-radius: 10px;
 }
-.words ul li {
+.words__cont ul li {
   display: flex;
   gap: 8px;
 }/*# sourceMappingURL=index.css.map */
