@@ -51,12 +51,22 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 .words__cont ul {
   padding: 20px;
   border-radius: 10px;
 }
 .words__cont ul li {
-  display: flex;
+  display: grid;
+  grid-template-columns: 20px 40px repeat(auto-fit, minmax(0, 1fr));
   gap: 8px;
+  text-wrap: nowrap;
+}
+.words__cont ul li b {
+  width: 40px;
+}
+.words__cont ul li p {
+  opacity: 0;
+}
+.words__cont ul li p.active {
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

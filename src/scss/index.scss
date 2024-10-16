@@ -42,12 +42,23 @@ body {
   @media (max-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-.words__cont ul {
-  padding: 20px;
-  border-radius: 10px;
-  li {
-    display: flex;
-    gap: 8px;
+  ul {
+    padding: 20px;
+    border-radius: 10px;
+    li {
+      display: grid;
+      grid-template-columns: 20px 40px repeat(auto-fit, minmax(0, 1fr));
+      gap: 8px;
+      text-wrap: nowrap;
+      b {
+        width: 40px;
+      }
+      p {
+        opacity: 0;
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
